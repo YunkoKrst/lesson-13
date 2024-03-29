@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bandage: '#23856D',
+            link: '#737373',
+            blueLink: '#23A6F0',
+            btn: '#DDDDDD',
+            nav:'#F3F3F3',
+            text: '#BDBDBD',
+            footer:'#252B42'
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  <title>Bandage</title>
+</head>
+
+<body class="font-sans">
+  <header>
+    <div class="bg-bandage ">
+
+      <div class="container mx-auto md:mx-12 pt-6 pb-[18px] bg-bandage text-white flex justify-around items-center">
+        <div>
+          <span class="text-xs mr-[10px]">(225) 555 - 0118</span>
+          <span class="text-xs">michelle.rivera@example.com</span>
+        </div>
+        <div>
+          <span class="text-sm font-bold leading-6 mr-[30px]">Follow Us and get a chance to win 80% off</span>
+        </div>
+        <div class="flex">
+          <span class="text-sm font-bold leading-6 mr-[10px]">Follow us:</span>
+          <ul class="flex items-center justify-between">
+            <li class="w-[26px] h-[26px] flex items-center justify-center">
+              <img src="./assets/icons/insta.png" alt="">
+            </li>
+            <li class="w-[26px] h-[26px] flex items-center justify-center">
+              <img src="./assets/icons/youtube.png" alt="">
+            </li>
+            <li class="w-[26px] h-[26px] flex items-center justify-center">
+              <img src="./assets/icons/facebook.png" alt="">
+            </li>
+            <li class="w-[26px] h-[26px] flex items-center justify-center">
+              <img src="./assets/icons/twit.png" alt="">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto items-center pt-6">
+      <nav class="flex items-center justify-around">
+
+        <div class="text-2xl font-bold mr-4 md:mx-8">Bandage</div>
+
+        <menu class="flex items-center justify-between gap-[15px]">
+          <li class="text-sm text-link font-bold leading-6">Home</li>
+          <li class="text-sm text-link font-bold leading-6">Shop</li>
+          <li class="text-sm text-link font-bold leading-6">About</li>
+          <li class="text-sm text-link font-bold leading-6">Blog</li>
+          <li class="text-sm text-link font-bold leading-6">Contact</li>
+          <li class="text-sm text-link font-bold leading-6">Pages</li>
+        </menu>
+
+        <div class="flex items-center justify-between">
+          <div class="text-blueLink text-sm font-bold leading-6 px-[15px]">
+            Login / Register
+          </div>
+          <div class="flex justify-around text-blueLink">
+            <button class="min-w-[46px] h-[46px] flex items-center justify-center text-xs">
+              <span class="w-4 h-4 flex items-center justify-center text-xs">
+                <img src="./assets/icons/magn.png" alt="">
+              </span>
+            </button>
+            <button class="min-w-[46px] h-[46px] flex items-center justify-center text-xs">
+              <span class="w-4 h-4 flex items-center justify-center">
+                <img src="./assets/icons/cart.png" alt="">
+              </span>
+              1
+
+            </button>
+            <button class="min-w-[46px] h-[46px] flex items-center justify-center text-xs">
+              <span class="w-4 h-4 flex items-center justify-center">
+                <img src="./assets/icons/heart.png" alt="">
+              </span>
+              1
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class=" container md:mx-8 mx-auto items-center py-6 flex  justify-around ">
+        <div class="w-[510px] ml-8">
+          <h2 class="text-2xl font-bold">Shop</h2>
+        </div>
+        <div class="w-[510px] text-end mr-8">
+          <div class="text-sm font-bold leading-6">
+            Home
+            <span class="text-gray-300 mx-[15px]">></span>
+            <span class="text-gray-300"> Shop</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="container px-28 mx-auto grid grid-cols-5 gap-[14px]">
+      <div class="flex relative">
+        <div class="flex flex-col  items-center justify-center gap-[10px] text-white text-sm absolute inset-0">
+          <h4 class="uppercase font-bold leading-6">Cloths</h4>
+          <span class=""> 5 Items</span>
+        </div>
+        <img class="object-cover h-[223px] w-full max-w-[205px] mx-auto" src="./assets/images/card-cover-5.jpg"
+          alt="Cover">
+      </div>
+
+      <div class="flex relative">
+        <div class="flex flex-col items-center justify-center gap-[10px] text-white text-sm absolute inset-0">
+          <h4 class="uppercase font-bold leading-6">Cloths</h4>
+          <span class=""> 5 Items</span>
+        </div>
+        <img class="object-cover h-[223px] w-full max-w-[205px] mx-auto" src="./assets/images/card-cover-6.jpg"
+          alt="Cover">
+      </div>
+
+      <div class="flex relative">
+        <div class="flex flex-col items-center justify-center gap-[10px] text-white text-sm absolute inset-0">
+          <h4 class="uppercase font-bold leading-6">Cloths</h4>
+          <span class=""> 5 Items</span>
+        </div>
+        <img class="object-cover h-[223px] w-full max-w-[205px] mx-auto" src="./assets/images/card-cover-7.jpg"
+          alt="Cover">
+      </div>
+
+      <div class="flex relative">
+        <div class="flex flex-col items-center justify-center gap-[10px] text-white text-sm absolute inset-0">
+          <h4 class="uppercase font-bold leading-6">Cloths</h4>
+          <span class=""> 5 Items</span>
+        </div>
+        <img class="object-cover h-[223px] w-full max-w-[205px] mx-auto" src="./assets/images/card-cover-8.jpg"
+          alt="Cover">
+      </div>
+
+      <div class="flex relative">
+        <div class="flex flex-col items-center justify-center gap-[10px] text-white text-sm absolute inset-0">
+          <h4 class="uppercase font-bold leading-6">Cloths</h4>
+          <span class=""> 5 Items</span>
+        </div>
+        <img class="object-cover h-[223px] w-full max-w-[205px] mx-auto" src="./assets/images/card-cover-9.jpg"
+          alt="Cover">
+      </div>
+    </section>
+
+    <section>
+      <div class="container mx-auto py-20 flex items-center justify-around">
+
+        <div class=" font-bold text-sm text-link">Showing all 12 results</div>
+        <div class="flex justify-between items-center space-x-4">
+          <div class="font-bold text-sm text-link ">Views:</div>
+          <img class="w-[46px] h-[46px]" src="/assets/icons/btn-sm-24.png" alt="btn-sm">
+          <img class="w-[46px] h-[46px]" src="./assets/icons/btn-sm-25.png" alt="icon">
+        </div>
+
+        <div class="flex space-x-4">
+          <button class="w-[141px] h-[50px] border bg-btn rounded">Popularity</button>
+          <button class="w-[94px] h-[50px] border bg-blueLink  text-[#fff] rounded">Filter</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mx-auto  px-28 mx-auto grid grid-cols-4 gap-2.5">
+      <div class="flex relative">
+        <img class="object-cover h-[300px] w-full max-w-[239px] mx-auto" src="./assets/images/fixed-height-1.png"
+          alt="Cover">
+      </div>
+      <div class="flex relative">
+        <img class="object-cover h-[300px] w-full max-w-[239px] mx-auto" src="./assets/images/product-cover-5.png"
+          alt="Cover">
+      </div>
+
+      <div class="flex relative">
+        <img class="object-cover h-[300px] w-full max-w-[239px] mx-auto" src="./assets/images/product-cover-6.png"
+          alt="Cover">
+      </div>
+
+
+      <div class="flex relative">
+        <img class="object-cover h-[300px] w-full max-w-[239px] mx-auto" src="./assets/images/fixed-height-2.png"
+          alt="Cover">
+      </div>
+      <div class="flex relative pb-20  mx-auto">
+        <div class="text-center ">
+          <h1 class="text-2xl font-bold leading-6 mb-2.5">Graphic Design</h1>
+          <h3 class="text-sm font-bold text-link leading-6 mb-2.5" >English Department</h3>
+          <h4 class="text-m font-bold leading-6 mb-2.5">$16.48 <span>$6.48</span></h4>
+          <img class="pl-10 " src="./assets/icons/product-colors.png" alt="colors">
+        </div>
+      </div>
+
+      <div class="flex relative mx-auto">
+        <div class="text-center ">
+          <h1 class="text-2xl font-bold leading-6 mb-2.5">Graphic Design</h1>
+          <h3 class="text-sm font-bold text-link leading-6 mb-2.5" >English Department</h3>
+          <h4 class="text-m font-bold leading-6 mb-2.5">$16.48 <span>$6.48</span></h4>
+          <img class="pl-10 " src="./assets/icons/product-colors.png" alt="colors">
+        </div>
+      </div>
+      <div class="flex relative  mx-auto">
+        <div class="text-center ">
+          <h1 class="text-2xl font-bold leading-6 mb-2.5">Graphic Design</h1>
+          <h3 class="text-sm font-bold text-link leading-6 mb-2.5" >English Department</h3>
+          <h4 class="text-m font-bold leading-6 mb-2.5">$16.48 <span>$6.48</span></h4>
+          <img class="pl-10 " src="./assets/icons/product-colors.png" alt="colors">
+        </div>
+      </div>
+
+      <div class="flex relative  mx-auto">
+        <div class="text-center ">
+          <h1 class="text-2xl font-bold leading-6 mb-2.5">Graphic Design</h1>
+          <h3 class="text-sm font-bold text-link leading-6 mb-2.5" >English Department</h3>
+          <h4 class="text-m font-bold leading-6 mb-2.5">$16.48 <span>$6.48</span></h4>
+          <img class="pl-10 " src="./assets/icons/product-colors.png" alt="colors">
+        </div>
+      </div>
+
+
+
+      <div class="flex relative">
+        <img class="object-cover h-[300px] w-full max-w-[239px] mx-auto" src="./assets/images/product-cover-7.png"
+          alt="Cover">
+      </div>
+
+      <div class="flex relative">
+        <img class="object-cover h-[300px] w-full max-w-[239px] mx-auto" src="./assets/images/product-cover-8.png"
+          alt="Cover">
+      </div>
+
+      <div class="flex relative">
+        <img class="object-cover h-[300px] w-full max-w-[239px] mx-auto" src="./assets/images/product-cover-9.png"
+          alt="Cover">
+      </div>
+
+      <div class="flex relative">
+        <img class="object-cover h-[300px] w-full max-w-[239px] mx-auto" src="./assets/images/fixed-height-3.png"
+          alt="Cover">
+      </div>
+
+      <div class="flex relative pb-20 mx-auto">
+        <div class="text-center ">
+          <h1 class="text-2xl font-bold leading-6 mb-2.5">Graphic Design</h1>
+          <h3 class="text-sm font-bold text-link leading-6 mb-2.5" >English Department</h3>
+          <h4 class="text-m font-bold leading-6 mb-2.5">$16.48 <span>$6.48</span></h4>
+          <img class="pl-10 " src="./assets/icons/product-colors.png" alt="colors">
+        </div>
+      </div>
+
+      <div class="flex relative  mx-auto">
+        <div class="text-center ">
+          <h1 class="text-2xl font-bold leading-6 mb-2.5">Graphic Design</h1>
+          <h3 class="text-sm font-bold text-link leading-6 mb-2.5" >English Department</h3>
+          <h4 class="text-m font-bold leading-6 mb-2.5">$16.48 <span>$6.48</span></h4>
+          <img class="pl-10 " src="./assets/icons/product-colors.png" alt="colors">
+        </div>
+      </div>
+
+      <div class="flex relative  mx-auto">
+        <div class="text-center ">
+          <h1 class="text-2xl font-bold leading-6 mb-2.5">Graphic Design</h1>
+          <h3 class="text-sm font-bold text-link leading-6 mb-2.5" >English Department</h3>
+          <h4 class="text-m font-bold leading-6 mb-2.5">$16.48 <span>$6.48</span></h4>
+          <img class="pl-10 " src="./assets/icons/product-colors.png" alt="colors">
+        </div>
+      </div>
+
+      <div class="flex relative  mx-auto">
+        <div class="text-center ">
+          <h1 class="text-2xl font-bold leading-6 mb-2.5">Graphic Design</h1>
+          <h3 class="text-sm font-bold text-link leading-6 mb-2.5" >English Department</h3>
+          <h4 class="text-m font-bold leading-6 mb-2.5">$16.48 <span>$6.48</span></h4>
+          <img class="pl-10 " src="./assets/icons/product-colors.png" alt="colors">
+        </div>
+      </div>
+
+
+      <div class="flex relative">
+        <img class="object-cover h-[300px] w-full max-w-[239px] mx-auto" src="./assets/images/product-cover-10.png"
+          alt="Cover">
+      </div>
+
+      <div class="flex relative">
+        <img class="object-cover h-[300px] w-full max-w-[239px] mx-auto" src="./assets/images/fixed-height-4.png"
+          alt="Cover">
+      </div>
+
+      <div class="flex relative">
+        <img class="object-cover h-[300px] w-full max-w-[239px] mx-auto" src="./assets/images/fixed-height-5.png"
+          alt="Cover">
+      </div>
+
+      <div class="flex relative">
+        <img class="object-cover h-[300px] w-full max-w-[239px] mx-auto" src="./assets/images/product-cover-11.png"
+          alt="Cover">
+      </div>
+
+      <div class="flex relative pb-20 mx-auto">
+        <div class="text-center ">
+          <h1 class="text-2xl font-bold leading-6 mb-2.5">Graphic Design</h1>
+          <h3 class="text-sm font-bold text-link leading-6 mb-2.5" >English Department</h3>
+          <h4 class="text-m font-bold leading-6 mb-2.5">$16.48 <span>$6.48</span></h4>
+          <img class="pl-10 " src="./assets/icons/product-colors.png" alt="colors">
+        </div>
+      </div>
+
+      <div class="flex relative  mx-auto">
+        <div class="text-center ">
+          <h1 class="text-2xl font-bold leading-6 mb-2.5">Graphic Design</h1>
+          <h3 class="text-sm font-bold text-link leading-6 mb-2.5" >English Department</h3>
+          <h4 class="text-m font-bold leading-6 mb-2.5">$16.48 <span>$6.48</span></h4>
+          <img class="pl-10 " src="./assets/icons/product-colors.png" alt="colors">
+        </div>
+      </div>
+
+      <div class="flex relative  mx-auto">
+        <div class="text-center ">
+          <h1 class="text-2xl font-bold leading-6 mb-2.5">Graphic Design</h1>
+          <h3 class="text-sm font-bold text-link leading-6 mb-2.5" >English Department</h3>
+          <h4 class="text-m font-bold leading-6 mb-2.5">$16.48 <span>$6.48</span></h4>
+          <img class="pl-10 " src="./assets/icons/product-colors.png" alt="colors">
+        </div>
+      </div>
+
+      <div class="flex relative  mx-auto">
+        <div class="text-center ">
+          <h1 class="text-2xl font-bold leading-6 mb-2.5">Graphic Design</h1>
+          <h3 class="text-sm font-bold text-link leading-6 mb-2.5" >English Department</h3>
+          <h4 class="text-m font-bold leading-6 mb-2.5">$16.48 <span>$6.48</span></h4>
+          <img class="pl-10 " src="./assets/icons/product-colors.png" alt="colors">
+        </div>
+      </div>
+    </section>
+
+    <section class="container mb-6 w-[313px] h-[74px] mx-auto ">
+    <div class="grid grid-cols-5  divide-x border rounded ">
+      <a class="px-[20px] py-[20px] bg-nav text-text" href="#">First</a>
+      <a class="py-[20px] px-[25px] text-blueLink" href="#">1</a>
+      <a class="p-[20px] px-[25px] bg-blueLink text-white" href="#">2</a>
+      <a class="py-[20px] px-[25px] text-blueLink " href="#">3</a>
+      <a class="px-[15px] py-[20px] text-blueLink" href="#">Next</a>
+  </div>
+    </section>
+  </main>
+<footer class="container  mx-auto">
+  <img class="mx-auto" src="./assets/images/desktop-clients-1.png" alt="client">
+
+  <div class="mx-auto mt-10 flex items-center justify-around space-x-56">
+    <div class="text-2xl font-bold mr-4">Bandage</div>
+    <div class="flex justify-between space-x-4">
+      <img src="./assets/icons/ant-design_facebook-filled.svg" alt="Facebook">
+      <img src="./assets/icons/instagram.svg" alt="Instagram">
+      <img src="./assets/icons/twitter.svg" alt="Twitter">
+    </div>
+  </div>
+
+  <div class="container mx-auto lg:mx-8 md:mx-16">
+  <div class="mx-auto mt-10 flex justify-center space-x-16">
+    <ul>
+      <h4 class="text-base text-footer font-bold">Company Info</h4>
+      <li class="text-base text-link font-bold">About Us</li>
+      <li class="text-base text-link font-bold">Carrier</li>
+      <li class="text-base text-link font-bold">We are hiring</li>
+      <li class="text-base text-link font-bold">Blog</li>
+    </ul>
+
+    
+    <ul>
+      <h4 class="text-base text-footer font-bold">Legal</h4>
+      <li class="text-base text-link font-bold">About Us</li>
+      <li class="text-base text-link font-bold">Carrier</li>
+      <li class="text-base text-link font-bold">We are hiring</li>
+      <li class="text-base text-link font-bold">Blog</li>
+    </ul>
+
+    
+    <ul>
+      <h4 class="text-base text-footer font-bold">Features</h4>
+      <li class="text-base text-link font-bold">Business Marketing</li>
+      <li class="text-base text-link font-bold">User Analytic</li>
+      <li class="text-base text-link font-bold">Live Chat</li>
+      <li class="text-base text-link font-bold">Unlimited Support</li>
+    </ul>
+
+    
+    <ul>
+      <h4 class="text-base text-footer font-bold">Resources</h4>
+      <li class="text-base text-link font-bold">IOS & Android</li>
+      <li class="text-base text-link font-bold">Watch a Demo</li>
+      <li class="text-base text-link font-bold">Customers</li>
+      <li class="text-base text-link font-bold">API</li>
+    </ul>
+
+    <div >
+      <h4 class="text-base text-footer font-bold mb-5">Get In Touch</h4>
+      <div class="flex items-center">
+      <input type="text" class="py-2 px-4 border border-gray-300 rounded-l-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Your Email">
+      <button class="py-2 px-4 bg-blue-500 text-white rounded-r-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">Subscribe</button>
+    </div>
+    <p class="text-xs font-normal text-link">Lore imp sum dolor Amit</p>
+  </div>
+</div>
+</div>
+  
+<div class="container mx-auto lg:mx-52 md:mx-28 w-[1050px] h-[74px] mt-12   ">
+  <p class=" text-base text-link font-bold text-start">Made With Love By Finland All Right Reserved </p>
+</div>
+ 
+</footer>
+
+
+
+</body>
+
+</html>
